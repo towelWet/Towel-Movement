@@ -277,3 +277,51 @@ To correct this and proceed with a CPU-only installation:
       set COMMANDLINE_ARGS=--skip-torch-cuda-test
       ```
     - Run the `webui-user.bat` file again.
+   
+
+## Running on a Mac:
+
+1. **Navigate to the Repository Folder**:
+   ```shell
+   cd stable-diffusion-webui
+   ```
+
+2. **Create a Virtual Environment** (if not already created):
+   ```shell
+   python3 -m venv venv
+   ```
+
+3. **Activate the Virtual Environment**:
+   ```shell
+   source venv/bin/activate
+   ```
+
+4. **Downgrade the `httpx` library** to version 0.24.1:
+   ```shell
+   pip install httpx==0.24.1
+   ```
+
+5. **Install the Requirements**:
+   - Ensure you have the `requirements.txt` or similar file provided by the repository.
+   - Run:
+     ```shell
+     pip install -r requirements.txt
+     ```
+
+6. **Launch the Web UI**:
+   - Use the provided shell script which should be made executable:
+     ```shell
+     ./webui.sh
+     ```
+
+   If the `webui.sh` script is not executable, you may need to make it executable by running:
+   ```shell
+   chmod +x webui.sh
+   ```
+
+   Then attempt to run it again:
+   ```shell
+   ./webui.sh
+   ```
+
+These steps should start the stable-diffusion-webui on your Mac. If you encounter any issues, refer back to the repository's documentation or issue tracker for the most recent updates or troubleshooting tips.
