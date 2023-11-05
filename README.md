@@ -339,7 +339,12 @@ This error indicates that the application ran out of memory while trying to allo
 
 To correct this and proceed with a CPU-only installation:
 
-5. **Uninstall the GPU version of PyTorch and torchvision:**
+5. **Create a Virtual Environment** (if not already created):
+   ```shell
+   python3 -m venv venv
+   ```
+
+6. **Uninstall the GPU version of PyTorch and torchvision:**
    - Activate the virtual environment:
      ```shell
      venv\Scripts\activate
@@ -349,21 +354,21 @@ To correct this and proceed with a CPU-only installation:
      pip uninstall torch torchvision
      ```
 
-6. **Install the CPU version of PyTorch:**
+7. **Install the CPU version of PyTorch:**
    - Install the CPU version of PyTorch with the following command:
      ```shell
      pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
      ```
 
-7. **Downgrade the `httpx` library** to version 0.24.1:
+8. **Downgrade the `httpx` library** to version 0.24.1:
    ```shell
    pip install httpx==0.24.1
    ```
 
-8. **Modify the `webui-user.bat` file:**
+9. **Modify the `webui-user.bat` file:**
    - Edit the `webui-user.bat` file to prevent future attempts to install the GPU version of PyTorch.
 
-9. **Run the script with the CPU flag:**
+10. **Run the script with the CPU flag:**
     - Set the environment variable to skip the GPU check:
       ```shell
       set COMMANDLINE_ARGS=--skip-torch-cuda-test
