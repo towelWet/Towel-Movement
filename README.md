@@ -229,30 +229,21 @@ This error indicates that the application ran out of memory while trying to allo
    - Download Python 3.10.6 from the official Python website.
    - During installation, ensure you check the option "Add Python to PATH".
 
-2. **Install Git:**
-   - Download and install Git from the official Git website.
-
-3. **Clone the Repository:**
-   - Open a command prompt and run:
-     ```shell
-     git clone https://github.com/towelWet/Towel-Movemen.git
-     ```
-
-4. **Navigate to the Repository Folder:**
+2. **Navigate to the Repository Folder:**
    - Change directory to the cloned repository:
      ```shell
      cd stable-diffusion-webui
      ```
 
-5. **Run the Installation Batch File:**
+3. **Run the Installation Batch File:**
    - Execute the `webui-user.bat` file by double-clicking on it in Windows Explorer or running it from the command prompt.
 
-6. **Encounter the Error:**
+4. **Encounter the Error:**
    - The installation will attempt to install GPU versions of PyTorch and torchvision, which will fail on a CPU-only system, leading to the error message you received.
 
 To correct this and proceed with a CPU-only installation:
 
-7. **Uninstall the GPU version of PyTorch and torchvision:**
+5. **Uninstall the GPU version of PyTorch and torchvision:**
    - Activate the virtual environment:
      ```shell
      venv\Scripts\activate
@@ -262,16 +253,21 @@ To correct this and proceed with a CPU-only installation:
      pip uninstall torch torchvision
      ```
 
-8. **Install the CPU version of PyTorch:**
+6. **Install the CPU version of PyTorch:**
    - Install the CPU version of PyTorch with the following command:
      ```shell
      pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
      ```
 
-9. **Modify the `webui-user.bat` file:**
+7. **Downgrade the `httpx` library** to version 0.24.1:
+   ```shell
+   pip install httpx==0.24.1
+   ```
+
+8. **Modify the `webui-user.bat` file:**
    - Edit the `webui-user.bat` file to prevent future attempts to install the GPU version of PyTorch.
 
-10. **Run the script with the CPU flag:**
+9. **Run the script with the CPU flag:**
     - Set the environment variable to skip the GPU check:
       ```shell
       set COMMANDLINE_ARGS=--skip-torch-cuda-test
