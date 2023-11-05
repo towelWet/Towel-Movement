@@ -255,7 +255,7 @@ To correct this and proceed with a CPU-only installation:
 7. **Uninstall the GPU version of PyTorch and torchvision:**
    - Activate the virtual environment:
      ```shell
-     C:\Users\Windows\stable-diffusion-webui\venv\Scripts\activate
+     venv\Scripts\activate
      ```
    - Uninstall the GPU versions:
      ```shell
