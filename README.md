@@ -235,7 +235,7 @@ This error indicates that the application ran out of memory while trying to allo
 3. **Clone the Repository:**
    - Open a command prompt and run:
      ```shell
-     git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+     git clone https://github.com/towelWet/Towel-Movemen.git
      ```
 
 4. **Navigate to the Repository Folder:**
