@@ -67,21 +67,117 @@ Amplitude Z
 Phase X
 Phase Y
 Phase Z
+
 🌐 Main Repo - javascript • 📁 Folder: stable-diffusion-webui/javascript o 📄 all_files_main_repo_javascript.txt o 🎮 imageviewerGamepad.js o 🖼 aspectRatioOverlay.js o 📑 inputAccordion.js o 🖱 contextMenus.js o 💾 localStorage.js o 🖐 dragdrop.js o 🌍 localization.js o ✏ edit-attention.js o 🔔 notification.js o 📝 edit-order.js o 📊 profilerVisualization.js o ➕ extensions.js o ⏳ progressbar.js o 🌐 extraNetworks.js o ↔ resizeHandle.js o 🛠 generationParams.js o 📝 textualInversion.js o 💡 hints.js o 🔢 token-counters.js o 🖼 hires_fix.js o 🎛 ui.js o 🖼 imageMaskFix.js o 🎛 ui_settings_hints.js o 🖼 imageviewer.js
 
-📄 Main Repo - scripts • 📁 Folder: stable-diffusion-webui/scripts o 📄 all_files_main_repo_scripts.txt o r🐍 postprocessing_codeformer.py o 🐍 postprocessing_gfpgan.py o 🐍 custom_code.py o 🐍 img2imgalt.py o 🔄 loopback.py o 🐍 postprocessing_upscale.py o 🐍 prompt_matrix.py o 🐍 prompts_from_file.py o 🎨 outpainting_mk_2.py o 🎨 poor_mans_outpainting.py o 🐍 sd_upscale.py o 🐍 xyz_grid.py
+Repository Directory Structure 🗂️
 
-• 📁 Folder: stable-diffusion-webui/modules (Look below for more details on files in modules folder) o 📄 all_files_extensions_modules.txt o 🗺 depthmap.py o 🗺 depthmap_api.py
+Main Repository: stable-diffusion-webui 🎨
+JavaScript Folder 📁
 
+stable-diffusion-webui/javascript
+all_files_main_repo_javascript.txt
+imageviewerGamepad.js 🎮
+aspectRatioOverlay.js 🖼️
+inputAccordion.js 📑
+contextMenus.js 🖱️
+localStorage.js 💾
+dragdrop.js 🖐️
+localization.js 🌍
+edit-attention.js ✏️
+notification.js 🔔
+edit-order.js 📝
+profilerVisualization.js 📊
+extensions.js ➕
+progressbar.js ⏳
+extraNetworks.js 🌐
+resizeHandle.js ↔️
+generationParams.js 🛠️
+textualInversion.js 📝
+hints.js 💡
+token-counters.js 🔢
+hires_fix.js 🖼️
+ui.js 🎛️
+imageMaskFix.js 🖼️
+ui_settings_hints.js 🎛️
+imageviewer.js 🖼️
+Scripts Folder 📜
+
+stable-diffusion-webui/scripts
+all_files_main_repo_scripts.txt
+postprocessing_codeformer.py 🐍
+postprocessing_gfpgan.py 🐍
+custom_code.py 🐍
+img2imgalt.py 🐍
+loopback.py 🔄
+postprocessing_upscale.py 🐍
+prompt_matrix.py 🐍
+prompts_from_file.py 🐍
+outpainting_mk_2.py 🎨
+poor_mans_outpainting.py 🎨
+sd_upscale.py 🐍
+xyz_grid.py 🐍
+Modules Folder 🧩
+
+stable-diffusion-webui/modules
+all_files_extensions_modules.txt
+depthmap.py 🗺️
+depthmap_api.py 🗺️
+Root Folder Files 📌
+
+stable-diffusion-webui
+CHANGELOG.md 📄
+CITATION.cff 📄
+CODEOWNERS 📄
+LICENSE.txt 📄
+README.md 📄
+pyproject.toml 📄
+requirements-test.txt 📄
+requirements.txt 📄
+requirements_versions.txt 📄
+package.json 📄
+.pycache 🗑️
+cache.json 📄
+webui.py 📄
+webui.sh 📄
+
+Extension: stable-diffusion-webui-depthmap-script 🔍
+Scripts Folder 📁
+
+stable-diffusion-webui/extensions/stable-diffusion-webui-depthmap-script/scripts
+all_files_extensions_scripts.txt
+depthmap.py 🗺️
+depthmap_api.py 🗺️
+Source Folder 📁
+
+stable-diffusion-webui/extensions/stable-diffusion-webui-depthmap-script/src
+all_files_extensions_src.txt
+depthmap_generation.py 🗺️
+gradio_args_transport.py 📡
+backbone.py 🦴
+misc.py 🛠️
+common_constants.py 📜
+normalmap_generation.py 🗺️
+common_ui.py 🧰
+stereoimage_generation.py 👓
+core.py 💻
+video_mode.py 🎥
+Root Folder Files 📌
+
+stable-diffusion-webui-depthmap-script
+CHANGELOG.md 📄
+LICENSE 📄
+README.md 📄
+__init__.py 📄
+bundled_sources.txt 📄
+main.py 📄
+requirements.txt 📄
+install.py 📄
+dzoedepth 📁
+src 📁
+
+Configuration File 🛠️
 /Volumes/Knowledge/Towel-Ware/Towel-Movement/stable-diffusion-webui/ui-config.json
-
-🛠 extensions folder 🗺 stable-diffusion-webui-depthmap-script • 📁 Folder: stable-diffusion-webui/extensions/stable-diffusion-webui-depthmap-script/scripts o 📄 all_files_extensions_scripts.txt o 🗺 depthmap.py o 🗺 depthmap_api.py
-
-• 📁 Folder: stable-diffusion-webui/extensions/stable-diffusion-webui-depthmap-script/src o 📄 all_files_extensions_src.txt o 🗺 depthmap_generation.py o 🗺 gradio_args_transport.py o 🗺 backbone.py o 🗺 misc.py o 🗺 common_constants.py o 🗺 normalmap_generation.py o 🗺 common_ui.py o 🗺 stereoimage_generation.py o 🗺 core.py o 🗺 video_mode.py
-
-🌐 Main Repo Base Folder/Root Folder - stable-diffusion-webui • 📁 Folder: stable-diffusion-webui o 📄 CHANGELOG.md o 📄 CITATION.cff o 📄 CODEOWNERS o 📄 LICENSE.txt o 📄 README.md o 📄 pyproject.toml o 📄 requirements-test.txt o 📄 requirements.txt o 📄 requirements_versions.txt o 📄 package.json o 📁 pycache o 📁 cache.json o 📁 webui.py o 📁 webui.sh
-
-🛠 Extension Base Folder/Root Folder - stable-diffusion-webui-depthmap-script • 📁 Folder: stable-diffusion-webui-depthmap-script o 📄 CHANGELOG.md o 📄 LICENSE o 📄 README.md o 📄 init.py o 📄 bundled_sources.txt o 📄 main.py o 📄 requirements.txt o 📄 install.py o 📁 dzoedepth o 📁 src
 
 Files in 'modules' folder (overview from main automatic1111 repo):
 
