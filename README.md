@@ -365,10 +365,18 @@ To correct this and proceed with a CPU-only installation:
    pip install httpx==0.24.1
    ```
 
-9. **Modify the `webui-user.bat` file:**
+9. **Install the Requirements:**
+
+Ensure you have the requirements.txt or similar file provided by the repository.
+   - Run:
+     ```shell
+     pip install -r requirements.txt
+     ```
+
+10. **Modify the `webui-user.bat` file:**
    - Edit the `webui-user.bat` file to prevent future attempts to install the GPU version of PyTorch.
 
-10. **Run the script with the CPU flag:**
+11. **Run the script with the CPU flag:**
     - Set the environment variable to skip the GPU check:
       ```shell
       set COMMANDLINE_ARGS=--skip-torch-cuda-test
