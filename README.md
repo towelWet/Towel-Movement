@@ -385,7 +385,7 @@ To correct this and proceed with a CPU-only installation:
 
 2. **Create a Virtual Environment** (if not already created):
    ```shell
-   python3 -m venv venv
+   python -m venv venv
    ```
 
 3. **Activate the Virtual Environment**:
